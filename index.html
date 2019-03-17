@@ -2,6 +2,8 @@
 	<head>
 	<meta charset="utf-8">
 		<title>this is title</title>
+		<link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 		<style type="text/css">
 		*{margin: 0;padding: 0;}
 			.top{width: 1920px;height: 100px;background: blue;}
@@ -11,6 +13,23 @@
 	</head>
 
 	<body>
+		<div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+        
+    <script src="assets/waifu-tips.js"></script>
+    <script src="assets/live2d.js"></script>
+    <script type="text/javascript">initModel("assets/")</script>
 		<div class="top">
 			<div class="a">
 				<div class="ab"></div>
